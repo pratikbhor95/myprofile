@@ -484,10 +484,11 @@ $(document).ready(function() {
               
               success : function (data) {
                         console.log(data)
+                        $('#name').val('')
+                        $('#email').val('')
+                        $('#message').val('')
                         alert('Thank you for getting in touch');
-                        $('#name').val() = ''
-                        $('#email').val() = ''
-                        $('#message').val() = ''
+                        
                       },
                   });
           }
